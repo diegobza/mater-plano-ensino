@@ -20,6 +20,8 @@ function cabecalho()
 function rodape()
 {
     echo "    </div>\n";
+    echo "    <div id=\"div-horizonte\">\n";
+    echo "    </div>\n";
     echo "    <div id=\"rodape-img\" class=\"container-fluid text-center\">\n";
     echo "        <div id=\"rodape-links\">\n";
     echo "            <div class=\"col-md-offset-4 col-md-2 text-left\">\n";
