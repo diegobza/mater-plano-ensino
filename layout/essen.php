@@ -13,17 +13,18 @@ function cabecalho()
     echo "</head>\n";
     echo "<body>\n";
     echo "    <div id=\"div-site\" class=\"container\">\n";
+    echo "        <p> TESTE </p>\n";
 }
 
 function rodape()
 {
     echo "    </div>\n";
-    echo "    <div id=\"rodape-img\" class=\"container-fluid\">\n";
+    echo "    <div id=\"rodape-img\" class=\"container-fluid text-center\">\n";
     echo "        <div id=\"rodape-links\">\n";
-    echo "            <div class=\"col-md-6\">\n";
+    echo "            <div class=\"col-md-offset-4 col-md-2 text-left\">\n";
     echo "                <a href=\"/\">Nossa Mater</a>\n";
     echo "            </div>\n";
-    echo "            <div class=\"col-md-6\">\n";
+    echo "            <div class=\"col-md-2\">\n";
     echo "            </div>\n";
     echo "        </div>\n";
     echo "    </div>\n";
