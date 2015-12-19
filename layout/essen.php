@@ -10,6 +10,7 @@ function cabecalho()
     echo "    <title>Nossa Mater - Plano de Ensino</title>\n";
     echo "    <link rel=\"stylesheet\" type=\"text/css\" href=\"layout/css/mater.css\">\n";
     echo "    <link rel=\"stylesheet\" type=\"text/css\" href=\"layout/css/bootstrap.min.css\">\n";
+    echo "    <link rel=\"stylesheet\" type=\"text/css\" href=\"https://fonts.googleapis.com/css?family=Exo+2\">\n";
     echo "</head>\n";
     echo "<body>\n";
     echo "    <div id=\"div-site\" class=\"container\">\n";
@@ -22,7 +23,10 @@ function rodape()
     echo "    <div id=\"rodape-img\" class=\"container-fluid text-center\">\n";
     echo "        <div id=\"rodape-links\">\n";
     echo "            <div class=\"col-md-offset-4 col-md-2 text-left\">\n";
-    echo "                <a href=\"/\">Nossa Mater</a>\n";
+    echo "                <a href=\"/\"><b>Nossa Mater</b></a>\n";
+    echo "                <ul class=\"list-unstyled\">\n";
+    echo "                    <li>Graduação</li>\n";
+    echo "                </ul>\n";
     echo "            </div>\n";
     echo "            <div class=\"col-md-2\">\n";
     echo "            </div>\n";
