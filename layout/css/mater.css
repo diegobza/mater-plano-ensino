@@ -7,11 +7,12 @@ a.deco-none, a.deco-none:hover {
 #div-site {
     background-color: gray;
 }
-#div-horizonte{
+#div-horizonte {
     height: 30px;
     background-image: url('/mater-plano-ensino/layout/img/horizonte.png');
 }
 #rodape-img {
-    height: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #d3d7cf;
 }
