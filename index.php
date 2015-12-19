@@ -1,3 +1,6 @@
 <?php
 
-phpinfo();
+require 'layout/essen.php';
+
+cabecalho();
+rodape();
