@@ -1,11 +1,11 @@
-p, span, a, li {
+body, h1, p, span, a, li {
     font-family: 'Exo 2', sans-serif;
 }
 a.deco-none, a.deco-none:hover {
     color: inherit;
 }
 #div-site {
-    background-color: gray;
+    /* background-color: gray; */
 }
 #div-horizonte {
     height: 30px;
