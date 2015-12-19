@@ -1,4 +1,4 @@
-p, a, li {
+p, span, a, li {
     font-family: 'Exo 2', sans-serif;
 }
 a.deco-none, a.deco-none:hover {
@@ -12,6 +12,6 @@ a.deco-none, a.deco-none:hover {
     background-image: url('/mater-plano-ensino/layout/img/horizonte.png');
 }
 #rodape-img {
-    height: 100px;
+    height: 120px;
     background-color: #d3d7cf;
 }
