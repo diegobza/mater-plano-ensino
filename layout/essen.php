@@ -23,7 +23,7 @@ function rodape()
     echo "    <div id=\"rodape-img\" class=\"container-fluid text-center\">\n";
     echo "        <div id=\"rodape-links\">\n";
     echo "            <div class=\"col-md-offset-4 col-md-2 text-left\">\n";
-    echo "                <a href=\"/\"><b>Nossa Mater</b></a>\n";
+    echo "                <a class=\"deco-none\" href=\"/\"><b>Nossa Mater</b></a>\n";
     echo "                <ul class=\"list-unstyled\">\n";
     echo "                    <li>Graduação</li>\n";
     echo "                </ul>\n";

@@ -1,6 +1,9 @@
 a, li {
     font-family: 'Exo 2', sans-serif;
 }
+a.deco-none, a.deco-none:hover {
+    color: inherit;
+}
 #div-site {
     background-color: gray;
 }
