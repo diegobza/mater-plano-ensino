@@ -28,7 +28,11 @@ function rodape()
     echo "                    <li>Graduação</li>\n";
     echo "                </ul>\n";
     echo "            </div>\n";
-    echo "            <div class=\"col-md-2\">\n";
+    echo "            <div class=\"col-md-2 text-left\">\n";
+    echo "                <a class=\"deco-none\" href=\"/\"><b>Contato</b></a>\n";
+    echo "                <ul class=\"list-unstyled\">\n";
+    echo "                    <li>Ouvidoria</li>\n";
+    echo "                </ul>\n";
     echo "            </div>\n";
     echo "        </div>\n";
     echo "    </div>\n";
