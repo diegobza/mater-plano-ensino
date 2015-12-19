@@ -23,7 +23,7 @@ function rodape()
     echo "    </div>\n";
     echo "    <div id=\"rodape-img\" class=\"container-fluid text-center\">\n";
     echo "        <div id=\"rodape-links\">\n";
-    echo "            <div class=\"col-md-offset-4 col-md-2 text-left\">\n";
+    echo "            <div class=\"col-md-offset-4 col-md-2 col-xs-6 text-left\">\n";
     echo "                <a class=\"deco-none\" href=\"/\"><b>Nossa Mater</b></a>\n";
     echo "                <ul class=\"list-unstyled\">\n";
     echo "                    <li>Graduação</li>\n";
@@ -31,7 +31,7 @@ function rodape()
     echo "                    <li><abbr title=\"Núcleo de Práticas Jurídicas\">NPJ</abbr> | <abbr title=\"Núcleo de Práticas Empresariais\">NPE</abbr></li>\n";
     echo "                </ul>\n";
     echo "            </div>\n";
-    echo "            <div class=\"col-md-6 text-left\">\n";
+    echo "            <div class=\"col-md-6 col-xs-6 text-left\">\n";
     echo "                <a class=\"deco-none\" href=\"/\"><b>Contato</b></a>\n";
     echo "                <ul class=\"list-unstyled\">\n";
     echo "                    <li>Ouvidoria</li>\n";
