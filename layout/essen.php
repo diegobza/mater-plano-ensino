@@ -35,12 +35,13 @@ function rodape()
     echo "                </ul>\n";
     echo "            </div>\n";
     echo "            <div class=\"col-md-4 col-sm-4 col-xs-6 text-left\">\n";
-    echo "                <a class=\"deco-none\" href=\"#\"><b>Contato</b></a>\n";
+    echo "                <a class=\"deco-none\" href=\"#\"><b>Mais</b></a>\n";
     echo "                <ul class=\"list-unstyled\">\n";
-    echo "                    <li>E-mails</li>\n";
-    echo "                    <li>Localização</li>\n";
-    echo "                    <li>Ouvidoria</li>\n";
-    echo "                    <li>Telefones</li>\n";
+    echo "                    <li>Eventos</li>\n";
+    echo "                    <li>Biblioteca</li>\n";
+    echo "                    <li>Canal do Aluno</li>\n";
+    echo "                    <li>Canal do Professor</li>\n";
+    echo "                    <li><abbr title=\"Ambiente Virtual de Aprendizagem\">AVA</abbr></li>\n";
     echo "                </ul>\n";
     echo "            </div>\n";
     echo "            <div class=\"col-md-4 col-sm-4 col-xs-12 text-left\">\n";
