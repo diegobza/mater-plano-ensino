@@ -8,6 +8,7 @@ function cabecalho()
     echo "    <meta charset=\"utf-8\">\n";
     echo "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n";
     echo "    <title>Nossa Mater - Plano de Ensino</title>\n";
+    echo "    <link rel=\"icon\" href=\"favicon.png\">\n";
     echo "    <link rel=\"stylesheet\" type=\"text/css\" href=\"https://fonts.googleapis.com/css?family=Exo+2\">\n";
     echo "    <link rel=\"stylesheet\" type=\"text/css\" href=\"layout/css/bootstrap.min.css\">\n";
     echo "    <link rel=\"stylesheet\" type=\"text/css\" href=\"layout/css/font-awesome.min.css\">\n";
