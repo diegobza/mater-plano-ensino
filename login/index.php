@@ -4,6 +4,7 @@ require '../layout/essen.php';
 
 cabecalho();
 
+echo "        <h2>Acesso ao Sistema</h2>\n";
 echo "        <form class=\"col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 text-left\">\n";
 echo "            <div class=\"form-group\">\n";
 echo "                <label for=\"usuario\">Usuário</label>\n";
