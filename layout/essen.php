@@ -7,8 +7,8 @@ function menuitem_emails()
     echo "            <table class=\"table table-bordered table-hover text-left\">\n";
     echo "                <thead>\n";
     echo "                    <tr>\n";
-    echo "                        <th>Coordenações</th>\n";
-    echo "                        <th>E-mails</th>\n";
+    echo "                        <th class=\"col-sm-6\">Coordenações</th>\n";
+    echo "                        <th class=\"col-sm-6\">E-mails</th>\n";
     echo "                    </tr>\n";
     echo "                </thead>\n";
     echo "                <tbody>\n";
