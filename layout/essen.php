@@ -3,7 +3,7 @@
 function menuitem_emails()
 {
     echo "        <h2>Lista de E-mails</h2>\n";
-    echo "        <div class=\"table-responsive\">\n";
+    echo "        <div class=\"table-responsive col-md-offset-2 col-md-8\">\n";
     echo "            <table class=\"table table-bordered table-hover text-left\">\n";
     echo "                <thead>\n";
     echo "                    <tr>\n";
@@ -12,19 +12,19 @@ function menuitem_emails()
     echo "                    </tr>\n";
     echo "                </thead>\n";
     echo "                <tbody>\n";
-    echo "                    <tr>\n";
+    echo "                    <tr title=\"Prof. Gildson Bezerra\">\n";
     echo "                        <td>Administração</td>\n";
     echo "                        <td>administracao@materchristi.edu.br</td>\n";
     echo "                    </tr>\n";
-    echo "                    <tr>\n";
+    echo "                    <tr title=\"Prof. Carlos Alberto\">\n";
     echo "                        <td>Ciências Contábeis</td>\n";
     echo "                        <td>contabeis@materchristi.edu.br</td>\n";
     echo "                    </tr>\n";
-    echo "                    <tr>\n";
+    echo "                    <tr title=\"Prof.ª Érika Benjamim\">\n";
     echo "                        <td>Direito</td>\n";
     echo "                        <td>direito@materchristi.edu.br</td>\n";
     echo "                    </tr>\n";
-    echo "                    <tr>\n";
+    echo "                    <tr title=\"Prof. Diego Bezerra\">\n";
     echo "                        <td>Sistemas de Informação</td>\n";
     echo "                        <td>sistemas@materchristi.edu.br</td>\n";
     echo "                    </tr>\n";
@@ -36,19 +36,19 @@ function menuitem_emails()
     echo "                    </tr>\n";
     echo "                </thead>\n";
     echo "                <tbody>\n";
-    echo "                    <tr>\n";
+    echo "                    <tr title=\"Leila Maria\">\n";
     echo "                        <td>Estágio</td>\n";
     echo "                        <td>estagio@materchristi.edu.br</td>\n";
     echo "                    </tr>\n";
-    echo "                    <tr>\n";
+    echo "                    <tr title=\"Sônia Paiva\">\n";
     echo "                        <td>Registro Escolar</td>\n";
     echo "                        <td>graduacao@materchristi.edu.br</td>\n";
     echo "                    </tr>\n";
-    echo "                    <tr>\n";
+    echo "                    <tr title=\"Amanda Gabriela\">\n";
     echo "                        <td>Secretaria</td>\n";
     echo "                        <td>secretariafmc@materchristi.edu.br</td>\n";
     echo "                    </tr>\n";
-    echo "                    <tr>\n";
+    echo "                    <tr title=\"Helyab Lucena\">\n";
     echo "                        <td>TCC</td>\n";
     echo "                        <td>tcc@materchristi.edu.br</td>\n";
     echo "                    </tr>\n";
