@@ -9,6 +9,7 @@ a.deco-none, a.deco-none:hover {
 }
 #div-horizonte {
     height: 30px;
+    margin-top: 25px;
     background-image: url('../img/horizonte.png');
 }
 #rodape-img {

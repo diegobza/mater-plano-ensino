@@ -4,7 +4,16 @@ require 'layout/essen.php';
 
 cabecalho();
 
-echo "        <h1>Plano de Ensino Online</h1>\n";
-echo "        <a class=\"btn btn-primary\" href=\"login/\">ENTRAR</a>\n";
+$mi = htmlspecialchars($_GET['mi']);
+
+switch ($mi) {
+    case '1':
+        menuitem_emails();
+        break;
+
+    default:
+        plano_ensino();
+        break;
+}
 
 rodape();
