@@ -10,9 +10,9 @@ function cabecalho()
     echo "    <title>Nossa Mater - Plano de Ensino</title>\n";
     echo "    <link rel=\"icon\" href=\"favicon.png\">\n";
     echo "    <link rel=\"stylesheet\" type=\"text/css\" href=\"https://fonts.googleapis.com/css?family=Exo+2\">\n";
-    echo "    <link rel=\"stylesheet\" type=\"text/css\" href=\"layout/css/bootstrap.min.css\">\n";
-    echo "    <link rel=\"stylesheet\" type=\"text/css\" href=\"layout/css/font-awesome.min.css\">\n";
-    echo "    <link rel=\"stylesheet\" type=\"text/css\" href=\"layout/css/mater.css\">\n";
+    echo "    <link rel=\"stylesheet\" type=\"text/css\" href=\"/pe/layout/css/bootstrap.min.css\">\n";
+    echo "    <link rel=\"stylesheet\" type=\"text/css\" href=\"/pe/layout/css/font-awesome.min.css\">\n";
+    echo "    <link rel=\"stylesheet\" type=\"text/css\" href=\"/pe/layout/css/mater.css\">\n";
     echo "</head>\n";
     echo "<body class=\"text-center\">\n";
     echo "    <div id=\"div-site\" class=\"container\">\n";
