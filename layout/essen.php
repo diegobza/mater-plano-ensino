@@ -65,63 +65,68 @@ function plano_ensino()
 
 function cabecalho()
 {
-    echo "<!DOCTYPE html>\n";
-    echo "<html>\n";
-    echo "<head>\n";
-    echo "    <meta charset=\"utf-8\">\n";
-    echo "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n";
-    echo "    <title>Nossa Mater - Plano de Ensino</title>\n";
-    echo "    <link rel=\"icon\" href=\"/pe/favicon.png\">\n";
-    echo "    <link rel=\"stylesheet\" type=\"text/css\" href=\"https://fonts.googleapis.com/css?family=Exo+2\">\n";
-    echo "    <link rel=\"stylesheet\" type=\"text/css\" href=\"/pe/layout/css/bootstrap.min.css\">\n";
-    echo "    <link rel=\"stylesheet\" type=\"text/css\" href=\"/pe/layout/css/font-awesome.min.css\">\n";
-    echo "    <link rel=\"stylesheet\" type=\"text/css\" href=\"/pe/layout/css/mater.css\">\n";
-    echo "</head>\n";
-    echo "<body class=\"text-center\">\n";
-    echo "    <div id=\"div-site\" class=\"container\">\n";
+    echo <<< 'HTML'
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nossa Mater - Plano de Ensino</title>
+    <link rel="icon" href="/pe/favicon.png">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Exo+2">
+    <link rel="stylesheet" type="text/css" href="/pe/layout/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/pe/layout/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/pe/layout/css/mater.css">
+</head>
+<body class="text-center">
+    <div id="div-site" class="container">
+
+HTML;
 }
 
 function rodape()
 {
-    echo "    </div>\n";
-    echo "    <div id=\"div-horizonte\">\n";
-    echo "    </div>\n";
-    echo "    <div id=\"rodape-img\" class=\"container-fluid text-center\">\n";
-    echo "        <div class=\"col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8\">\n";
-    echo "            <div class=\"col-md-4 col-sm-4 col-xs-6 text-left\">\n";
-    echo "                <a class=\"deco-none\" href=\"#\"><b>Nossa Mater</b></a>\n";
-    echo "                <ul class=\"list-unstyled\">\n";
-    echo "                    <li>Graduação</li>\n";
-    echo "                    <li>Pós-Graduação</li>\n";
-    echo "                    <li>Extensão</li>\n";
-    echo "                    <li>Estágio</li>\n";
-    echo "                    <li><abbr title=\"Núcleo de Práticas Jurídicas\">NPJ</abbr> | <abbr title=\"Núcleo de Práticas Empresariais\">NPE</abbr></li>\n";
-    echo "                </ul>\n";
-    echo "            </div>\n";
-    echo "            <div class=\"col-md-4 col-sm-4 col-xs-6 text-left\">\n";
-    echo "                <a class=\"deco-none\" href=\"#\"><b>Mais</b></a>\n";
-    echo "                <ul class=\"list-unstyled\">\n";
-    echo "                    <li>Eventos</li>\n";
-    echo "                    <li>Biblioteca</li>\n";
-    echo "                    <li>Canal do Aluno</li>\n";
-    echo "                    <li>Canal do Professor</li>\n";
-    echo "                    <li><a class=\"deco-none\" href=\"http://moodle-fac.materchristi.edu.br\" target=\"_blank\"><abbr title=\"Ambiente Virtual de Aprendizagem\">AVA</abbr></a></li>\n";
-    echo "                </ul>\n";
-    echo "            </div>\n";
-    echo "            <div class=\"col-md-4 col-sm-4 col-xs-12 text-left\">\n";
-    echo "                <a class=\"deco-none\" href=\"#\"><b>Contato</b></a>\n";
-    echo "                <ul class=\"list-unstyled\">\n";
-    echo "                    <li><a class=\"deco-none\" href=\"/pe/?mi=1\">E-mails</a></li>\n";
-    echo "                    <li>Localização</li>\n";
-    echo "                    <li>Ouvidoria</li>\n";
-    echo "                    <li>Telefones</li>\n";
-    echo "                </ul>\n";
-    echo "            </div>\n";
-    echo "        </div>\n";
-    echo "        <span class=\"col-xs-12\"><small>Copyright &copy; 2015‒2016 <b>Faculdade de Ciências e Tecnologia Mater Christi</b> &nbsp; | &nbsp; Desenvolvido por <a class=\"deco-none\" href=\"https://tatulab.com\" target=\"_blank\"><b>TatuLab</b></a></small></span>\n";
-    echo "    </div>\n";
-    echo "    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js\"></script>\n";
-    echo "    <script src=\"js/bootstrap.min.js\"></script>\n";
-    echo "</body>\n";
-    echo "</html>\n";
+    echo <<< 'HTML'
+    </div>
+    <div id="div-horizonte">
+    </div>
+    <div id="rodape-img" class="container-fluid text-center">
+        <div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
+            <div class="col-md-4 col-sm-4 col-xs-6 text-left">
+                <a class="deco-none" href="#"><b>Nossa Mater</b></a>
+                <ul class="list-unstyled">
+                    <li>Graduação</li>
+                    <li>Pós-Graduação</li>
+                    <li>Extensão</li>
+                    <li>Estágio</li>
+                    <li><abbr title="Núcleo de Práticas Jurídicas">NPJ</abbr> | <abbr title="Núcleo de Práticas Empresariais">NPE</abbr></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6 text-left">
+                <a class="deco-none" href="#"><b>Mais</b></a>
+                <ul class="list-unstyled">
+                    <li>Eventos</li>
+                    <li>Biblioteca</li>
+                    <li>Canal do Aluno</li>
+                    <li>Canal do Professor</li>
+                    <li><a class="deco-none" href="http://moodle-fac.materchristi.edu.br" target="_blank"><abbr title="Ambiente Virtual de Aprendizagem">AVA</abbr></a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 text-left">
+                <a class="deco-none" href="#"><b>Contato</b></a>
+                <ul class="list-unstyled">
+                    <li><a class="deco-none" href="/pe/?mi=1">E-mails</a></li>
+                    <li>Localização</li>
+                    <li>Ouvidoria</li>
+                    <li>Telefones</li>
+                </ul>
+            </div>
+        </div>
+        <span class="col-xs-12"><small>Copyright &copy; 2015‒2016 <b>Faculdade de Ciências e Tecnologia Mater Christi</b> &nbsp; | &nbsp; Desenvolvido por <a class="deco-none" href="https://tatulab.com" target="_blank"><b>TatuLab</b></a></small></span>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+HTML;
 }
