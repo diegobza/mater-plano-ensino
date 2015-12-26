@@ -92,34 +92,36 @@ function rodape()
     </div>
     <div id="rodape-img">
         <div class="container">
-            <div class="col-md-4 col-sm-4 col-xs-6 text-left">
-                <a class="deco-none" href="#"><b>Nossa Mater</b></a>
-                <ul class="list-unstyled">
-                    <li>Graduação</li>
-                    <li>Pós-Graduação</li>
-                    <li>Extensão</li>
-                    <li>Estágio</li>
-                    <li><abbr title="Núcleo de Práticas Jurídicas">NPJ</abbr> | <abbr title="Núcleo de Práticas Empresariais">NPE</abbr></li>
-                </ul>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-6 text-left">
-                <a class="deco-none" href="#"><b>Mais</b></a>
-                <ul class="list-unstyled">
-                    <li>Eventos</li>
-                    <li>Biblioteca</li>
-                    <li>Canal do Aluno</li>
-                    <li>Canal do Professor</li>
-                    <li><a class="deco-none" href="http://moodle-fac.materchristi.edu.br" target="_blank"><abbr title="Ambiente Virtual de Aprendizagem">AVA</abbr></a></li>
-                </ul>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-12 text-left">
-                <a class="deco-none" href="#"><b>Contato</b></a>
-                <ul class="list-unstyled">
-                    <li><a class="deco-none" href="/pe/?mi=1">E-mails</a></li>
-                    <li>Localização</li>
-                    <li>Ouvidoria</li>
-                    <li>Telefones</li>
-                </ul>
+            <div class="row">
+                <div class="col-xs-4">
+                    <a class="deco-none" href="#"><b>Nossa Mater</b></a>
+                    <ul class="list-unstyled">
+                        <li>Graduação</li>
+                        <li>Pós-Graduação</li>
+                        <li>Extensão</li>
+                        <li>Estágio</li>
+                        <li><abbr title="Núcleo de Práticas Jurídicas">NPJ</abbr> | <abbr title="Núcleo de Práticas Empresariais">NPE</abbr></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4">
+                    <a class="deco-none" href="#"><b>Mais</b></a>
+                    <ul class="list-unstyled">
+                        <li>Eventos</li>
+                        <li>Biblioteca</li>
+                        <li>Canal do Aluno</li>
+                        <li>Canal do Professor</li>
+                        <li><a class="deco-none" href="http://moodle-fac.materchristi.edu.br" target="_blank"><abbr title="Ambiente Virtual de Aprendizagem">AVA</abbr></a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4">
+                    <a class="deco-none" href="#"><b>Contato</b></a>
+                    <ul class="list-unstyled">
+                        <li><a class="deco-none" href="/pe/?mi=1">E-mails</a></li>
+                        <li>Localização</li>
+                        <li>Ouvidoria</li>
+                        <li>Telefones</li>
+                    </ul>
+                </div>
             </div>
             <span class="col-xs-12"><small>Copyright &copy; 2015‒2016 <b>Faculdade de Ciências e Tecnologia Mater Christi</b> &nbsp; | &nbsp; Desenvolvido por <a class="deco-none" href="https://tatulab.com" target="_blank"><b>TatuLab</b></a></small></span>
         </div>
