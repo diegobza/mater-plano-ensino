@@ -7,6 +7,10 @@ a.deco-none, a.deco-none:hover {
 #div-site {
     /* background-color: gray; */
 }
+#cabecalho {
+    background-color: #f5f7f8;
+    margin-bottom: 10px;
+}
 #div-horizonte {
     height: 30px;
     margin-top: 25px;

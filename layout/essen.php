@@ -79,6 +79,15 @@ function cabecalho()
     <link rel="stylesheet" type="text/css" href="/pe/layout/css/mater.css">
 </head>
 <body class="text-center">
+    <div id="cabecalho">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-1">
+                    <img style="height: 50px" src="/pe/layout/img/nossa_mater.svg" alt="Nossa Mater" />
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="div-site" class="container">
 
 HTML;
@@ -126,8 +135,8 @@ function rodape()
             <span class="col-xs-12"><small>Copyright &copy; 2015‒2016 <b>Faculdade de Ciências e Tecnologia Mater Christi</b> &nbsp; | &nbsp; Desenvolvido por <a class="deco-none" href="https://tatulab.com" target="_blank"><b>TatuLab</b></a></small></span>
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="layout/js/jquery-1.12.0.min.js"></script>
+    <script src="layout/js/bootstrap.min.js"></script>
 </body>
 </html>
 HTML;
