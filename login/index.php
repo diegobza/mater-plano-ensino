@@ -8,7 +8,7 @@ cabecalho();
 
 echo <<< 'HTML'
         <h2>Acesso ao Sistema</h2>
-        <form class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 text-left">
+        <form class="col-sm-offset-3 col-sm-6 text-left" method="post">
             <div class="form-group">
                 <label for="usuario">Usuário</label>
                 <input type="text" class="form-control" id="usuario" placeholder="Digite seu nome de usuário">
