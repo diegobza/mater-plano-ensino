@@ -2,6 +2,8 @@
 
 require '../layout/essen.php';
 
+session_start();
+
 cabecalho();
 
 echo <<< 'HTML'
