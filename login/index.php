@@ -14,18 +14,22 @@ $len_senha = strlen($senha);
 if ($len_login > 0 && $len_senha > 0) {
     $conn = getCon();
     if ($conn) {
-        $sql = "SELECT usuSenha FROM tabUsuario WHERE usuLogin = '$login'";
-        echo $sql;
-        $result = mysqli_query($conn, $sql);
-        if (mysqli_num_rows($result) > 0) {
-            $row = mysqli_fetch_assoc($result);
-            $hash = $row['usuSenha'];
-            if (password_verify($senha, $hash)) {
-                echo "OK\n";
-            } else {
-                echo "Falha\n";
-            }
+        $stmt = $conn->prepare('SELECT usuSenha FROM tabUsuario WHERE usuLogin = ?');
+        $stmt->bind_param('s', $login);
+        $stmt->execute();
+        $stmt->bind_result($hash);
+        $result = $stmt->fetch();
+
+        if ($result) {
+            echo "$hash\n";
+        } elseif ($result == null) {
+            echo "Usuário não existente\n";
+        } else {
+            echo "Erro durante a busca de dados.\n";
         }
+
+        $stmt->close();
+        $conn->close();
     }
 }
 

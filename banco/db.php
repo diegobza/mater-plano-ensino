@@ -1,17 +1,19 @@
 <?php
 
+define('DB_HOST', 'localhost');
+define('DB_USER', 'root');
+define('DB_PASS', 'beeblebrox');
+define('DB_NAME', 'materpe');
+
 function getCon()
 {
-    $servername = 'localhost';
-    $username = 'root';
-    $password = 'beeblebrox';
-    $database = 'materpe';
+    $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
-    $conn = mysqli_connect($servername, $username, $password, $database);
+    if ($mysqli->connect_errno) {
+        echo 'Failed to connect to MySQL';
 
-    if (!$conn) {
         return;
-    } else {
-        return $conn;
     }
+
+    return $mysqli;
 }
