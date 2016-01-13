@@ -22,6 +22,7 @@ if ($len_login > 0 && $len_senha > 0) {
 
         if ($result) {
             if (password_verify($senha, $hash)) {
+                $_SESSION['login'] = $login;
             } else {
                 $bootClass = 'text-danger';
                 $msg = 'Usuário ou senha inválida.';
