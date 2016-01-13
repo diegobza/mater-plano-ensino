@@ -4,6 +4,9 @@ body, h1, p, span, a, li {
 a.deco-none, a.deco-none:hover {
     color: inherit;
 }
+p.bg-danger {
+    padding: 10px;
+}
 #div-site {
     /* background-color: gray; */
 }

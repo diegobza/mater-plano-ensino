@@ -21,9 +21,14 @@ if ($len_login > 0 && $len_senha > 0) {
         $result = $stmt->fetch();
 
         if ($result) {
-            echo "$hash\n";
+            if (password_verify($senha, $hash)) {
+            } else {
+                $bootClass = 'text-danger';
+                $msg = 'Usuário ou senha inválida.';
+            }
         } elseif ($result == null) {
-            echo "Usuário não existente\n";
+            $bootClass = 'text-danger';
+            $msg = 'Usuário ou senha inválida.';
         } else {
             echo "Erro durante a busca de dados.\n";
         }
@@ -31,11 +36,14 @@ if ($len_login > 0 && $len_senha > 0) {
         $stmt->close();
         $conn->close();
     }
+} else {
+    $bootClass = 'text-danger';
+    $msg = 'Preencha os campos.';
 }
 
 cabecalho();
 
-echo <<< 'HTML'
+echo <<< HTML
         <h2>Acesso ao Sistema</h2>
         <form class="col-sm-offset-3 col-sm-6 text-left" action="index.php" method="post">
             <div class="form-group">
@@ -46,6 +54,7 @@ echo <<< 'HTML'
                 <label for="senha">Senha</label>
                 <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite a sua senha">
             </div>
+            <p class="$bootClass text-center"><strong>$msg</strong></p>
             <button class="btn btn-primary">ENTRAR</button>
         </form>
 
