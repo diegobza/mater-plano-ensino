@@ -1,20 +1,31 @@
 <?php
 
 require '../layout/essen.php';
-require '../banco/db.php'
+require '../banco/db.php';
 
 session_start();
 
-$login = htmlspecialchars($_POST['usuario']);
+$login = trim(htmlspecialchars($_POST['usuario']));
 $senha = htmlspecialchars($_POST['senha']);
 
-$len_login = strlen(trim($login));
+$len_login = strlen($login);
 $len_senha = strlen($senha);
 
 if ($len_login > 0 && $len_senha > 0) {
-    echo "login\n";
-    if (getCon()) {
-        echo "conectou\n";
+    $conn = getCon();
+    if ($conn) {
+        $sql = "SELECT usuSenha FROM tabUsuario WHERE usuLogin = '$login'";
+        echo $sql;
+        $result = mysqli_query($conn, $sql);
+        if (mysqli_num_rows($result) > 0) {
+            $row = mysqli_fetch_assoc($result);
+            $hash = $row['usuSenha'];
+            if (password_verify($senha, $hash)) {
+                echo "OK\n";
+            } else {
+                echo "Falha\n";
+            }
+        }
     }
 }
 
