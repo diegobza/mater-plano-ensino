@@ -11,35 +11,37 @@ $senha = htmlspecialchars($_POST['senha']);
 $len_login = strlen($login);
 $len_senha = strlen($senha);
 
-if ($len_login > 0 && $len_senha > 0) {
-    $conn = getCon();
-    if ($conn) {
-        $stmt = $conn->prepare('SELECT usuSenha FROM tabUsuario WHERE usuLogin = ?');
-        $stmt->bind_param('s', $login);
-        $stmt->execute();
-        $stmt->bind_result($hash);
-        $result = $stmt->fetch();
+if (!empty($_POST)) {
+    if ($len_login > 0 && $len_senha > 0) {
+        $conn = getCon();
+        if ($conn) {
+            $stmt = $conn->prepare('SELECT usuSenha FROM tabUsuario WHERE usuLogin = ?');
+            $stmt->bind_param('s', $login);
+            $stmt->execute();
+            $stmt->bind_result($hash);
+            $result = $stmt->fetch();
 
-        if ($result) {
-            if (password_verify($senha, $hash)) {
-                $_SESSION['login'] = $login;
-            } else {
+            if ($result) {
+                if (password_verify($senha, $hash)) {
+                    $_SESSION['login'] = $login;
+                } else {
+                    $bootClass = 'text-danger';
+                    $msg = 'Usuário ou senha inválida.';
+                }
+            } elseif ($result == null) {
                 $bootClass = 'text-danger';
                 $msg = 'Usuário ou senha inválida.';
+            } else {
+                echo "Erro durante a busca de dados.\n";
             }
-        } elseif ($result == null) {
-            $bootClass = 'text-danger';
-            $msg = 'Usuário ou senha inválida.';
-        } else {
-            echo "Erro durante a busca de dados.\n";
-        }
 
-        $stmt->close();
-        $conn->close();
+            $stmt->close();
+            $conn->close();
+        }
+    } else {
+        $bootClass = 'text-danger';
+        $msg = 'Preencha os campos.';
     }
-} else {
-    $bootClass = 'text-danger';
-    $msg = 'Preencha os campos.';
 }
 
 cabecalho();
