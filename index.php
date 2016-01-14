@@ -6,8 +6,13 @@ session_start();
 
 cabecalho();
 
-if (isset($_SESSION['login']) && $_SESSION['login'] != '') {
-    
+if (isset($_SESSION['login']) && !empty($_SESSION['login'])) {
+    echo <<< HTML
+        <nav class="navbar navbar-default">
+            <p class="navbar-text">aa</p>
+            <a class="btn btn-default navbar-btn">Sair</a>
+        </nav>
+HTML;
 }
 
 $mi = htmlspecialchars($_GET['mi']);
