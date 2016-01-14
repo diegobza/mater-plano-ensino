@@ -79,16 +79,6 @@ function cabecalho()
     <link rel="stylesheet" type="text/css" href="/pe/layout/css/mater.css">
 </head>
 <body class="text-center">
-    <div id="cabecalho">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-1">
-                    <img style="height: 50px" src="/pe/layout/img/nossa_mater.svg" alt="Nossa Mater" />
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="div-site" class="container">
 
 HTML;
 }

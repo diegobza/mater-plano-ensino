@@ -5,6 +5,10 @@ require '../banco/db.php';
 
 session_start();
 
+if ($_GET['logout'] == '1') {
+    session_destroy();
+}
+
 $login = trim(htmlspecialchars($_POST['usuario']));
 $senha = htmlspecialchars($_POST['senha']);
 
@@ -15,15 +19,17 @@ if (!empty($_POST)) {
     if ($len_login > 0 && $len_senha > 0) {
         $conn = getCon();
         if ($conn) {
-            $stmt = $conn->prepare('SELECT usuSenha FROM tabUsuario WHERE usuLogin = ?');
+            $stmt = $conn->prepare('SELECT usuSenha, usuNome FROM tabUsuario WHERE usuLogin = ?');
             $stmt->bind_param('s', $login);
             $stmt->execute();
-            $stmt->bind_result($hash);
+            $stmt->bind_result($hash, $nome);
             $result = $stmt->fetch();
 
             if ($result) {
                 if (password_verify($senha, $hash)) {
                     $_SESSION['login'] = $login;
+                    $_SESSION['nome'] = $nome;
+                    header('Location: http://localhost/pe/');
                 } else {
                     $bootClass = 'text-danger';
                     $msg = 'Usuário ou senha inválida.';
@@ -47,6 +53,7 @@ if (!empty($_POST)) {
 cabecalho();
 
 echo <<< HTML
+    <div class="container">
         <h2>Acesso ao Sistema</h2>
         <form class="col-sm-offset-3 col-sm-6 text-left" action="index.php" method="post">
             <div class="form-group">
