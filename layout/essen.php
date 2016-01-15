@@ -1,5 +1,19 @@
 <?php
 
+function menuitem_disciplinas() {
+    echo <<< HTML
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Disciplina</th>
+                    <th>CH</th>
+                </tr>
+            </thead>
+        </table>
+
+HTML;
+}
+
 function menuitem_emails()
 {
     echo "        <h2>Lista de E-mails</h2>\n";
