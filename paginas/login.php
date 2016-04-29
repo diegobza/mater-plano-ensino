@@ -1,6 +1,5 @@
 <?php
 
-require '../layout/essen.php';
 require '../banco/db.php';
 
 session_start();
@@ -50,8 +49,6 @@ if (!empty($_POST)) {
     }
 }
 
-cabecalho();
-
 echo <<< HTML
     <div class="container">
         <h2>Acesso ao Sistema</h2>
@@ -69,5 +66,3 @@ echo <<< HTML
         </form>
 
 HTML;
-
-rodape();

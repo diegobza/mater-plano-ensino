@@ -42,11 +42,13 @@ HTML;
 
 switch ($mi) {
     case '1':
-        menuitem_emails();
+        include 'paginas/menuitem_emails.php';
         break;
     case '2':
         menuitem_disciplinas();
         break;
+    case '3':
+        include 'paginas/login.php';
     default:
         plano_ensino();
         break;
