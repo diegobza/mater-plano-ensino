@@ -18,7 +18,6 @@ HTML;
 function plano_ensino()
 {
     echo "        <h1>Plano de Ensino Online</h1>\n";
-    echo "        <a class=\"btn btn-primary\" href=\"login/\">ENTRAR</a>\n";
 }
 
 function cabecalho()
@@ -37,6 +36,35 @@ function cabecalho()
     <link rel="stylesheet" type="text/css" href="/pe/layout/css/mater.css">
 </head>
 <body class="text-center">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="...">
+                </a>
+            </div>
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form method="post" class="navbar-form navbar-right" role="login">
+                <div class="form-group">
+                    <input name="usuario" type="text" class="form-control" placeholder="Usuário">
+                    <input name="senha" type="password" class="form-control" placeholder="Senha">
+                </div>
+                <button type="submit" class="btn btn-default">Entrar</button>
+            </form>
+        </div>
+    </nav>
 
 HTML;
 }

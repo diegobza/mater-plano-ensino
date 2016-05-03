@@ -6,6 +6,12 @@ session_start();
 
 cabecalho();
 
+if (!empty($_POST['usuario']) && !empty($_POST['senha'])) {
+    $PE_USER = htmlspecialchars($_POST['usuario']);
+    $PE_PASS = htmlspecialchars($_POST['senha']);
+    echo $PE_USER . $PE_PASS;
+}
+
 $mi = htmlspecialchars($_GET['mi']);
 
 switch ($mi) {
