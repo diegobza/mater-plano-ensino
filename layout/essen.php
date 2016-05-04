@@ -56,13 +56,32 @@ function cabecalho()
                     </ul>
                 </li>
             </ul>
-            <form method="post" class="navbar-form navbar-right" role="login">
-                <div class="form-group">
-                    <input name="usuario" type="text" class="form-control" placeholder="Usuário">
-                    <input name="senha" type="password" class="form-control" placeholder="Senha">
-                </div>
-                <button type="submit" class="btn btn-default">Entrar</button>
+
+HTML;
+
+    if (empty($_SESSION['login'])) {
+        echo <<< HTML
+        <form method="post" class="navbar-form navbar-right" role="login">
+            <div class="form-group">
+                <input name="usuario" type="text" class="form-control" placeholder="Usuário">
+                <input name="senha" type="password" class="form-control" placeholder="Senha">
+            </div>
+            <button type="submit" class="btn btn-default">Entrar</button>
+        </form>
+
+HTML;
+    } else {
+        echo <<< HTML
+            <form method="post" class="navbar-form navbar-right" role="logout">
+                {$_SESSION['USER_NAME']}
+                <input name="logout" type="hidden" class="form-control">
+                <button type="submit" class="btn btn-default">Sair</button>
             </form>
+
+HTML;
+    }
+
+    echo <<< HTML
         </div>
     </nav>
 
