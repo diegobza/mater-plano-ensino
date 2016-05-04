@@ -15,5 +15,7 @@ function getCon()
         return;
     }
 
+    $mysqli->set_charset("utf8");
+
     return $mysqli;
 }

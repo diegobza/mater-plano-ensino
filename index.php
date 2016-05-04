@@ -21,4 +21,8 @@ if (!empty($_POST['usuario']) && !empty($_POST['senha'])) {
 
 cabecalho();
 
+if (!empty($_SESSION['login'])) {
+    con_tabela_disciplinas();
+}
+
 rodape();

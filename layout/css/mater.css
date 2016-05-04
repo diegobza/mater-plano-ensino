@@ -7,6 +7,10 @@ a.deco-none, a.deco-none:hover {
 p.bg-danger {
     padding: 10px;
 }
+.table > tbody > tr > td {
+    text-align: left;
+    vertical-align: middle;
+}
 #cabecalho {
     background-color: #f5f7f8;
     margin-bottom: 10px;
