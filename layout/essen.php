@@ -40,43 +40,30 @@ function cabecalho()
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand" href="#">
-                    <img alt="Brand" src="...">
+                    <img alt="PlanoEnsino" src="...">
                 </a>
             </div>
-            <ul class="nav navbar-nav navbar-left">
-                <li><a href="#">Link</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
-                </li>
-            </ul>
 
 HTML;
 
     if (empty($_SESSION['login'])) {
         echo <<< HTML
-        <form method="post" class="navbar-form navbar-right" role="login">
-            <div class="form-group">
-                <input name="usuario" type="text" class="form-control" placeholder="Usuário">
-                <input name="senha" type="password" class="form-control" placeholder="Senha">
-            </div>
-            <button type="submit" class="btn btn-default">Entrar</button>
-        </form>
+            <form method="post" class="navbar-form navbar-right" role="login">
+                <div class="form-group">
+                    <input name="usuario" type="text" class="form-control" placeholder="Usuário">
+                    <input name="senha" type="password" class="form-control" placeholder="Senha">
+                </div>
+                <button type="submit" class="btn btn-default">Entrar</button>
+            </form>
 
 HTML;
     } else {
         echo <<< HTML
             <form method="post" class="navbar-form navbar-right" role="logout">
-                {$_SESSION['USER_NAME']}
                 <input name="logout" type="hidden" class="form-control">
                 <button type="submit" class="btn btn-default">Sair</button>
             </form>
+            <p class="navbar-text navbar-right">{$_SESSION['USER_NAME']}</p>
 
 HTML;
     }
