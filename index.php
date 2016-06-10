@@ -1,7 +1,7 @@
 <?php
 
-require 'layout/essen.php';
-require 'banco/consultas.php';
+require_once 'layout/essen.php';
+require_once 'banco/consultas.php';
 
 session_start();
 

@@ -22,7 +22,8 @@ function plano_ensino()
 
 function cabecalho()
 {
-    echo <<< 'HTML'
+    $config = include 'config.php';
+    echo <<< HTML
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,15 +32,15 @@ function cabecalho()
     <title>Nossa Mater - Plano de Ensino</title>
     <link rel="icon" href="/pe/favicon.png">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Exo+2">
-    <link rel="stylesheet" type="text/css" href="/pe/layout/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/pe/layout/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/pe/layout/css/mater.css">
+    <link rel="stylesheet" type="text/css" href="/{$config['folder']}/layout/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/{$config['folder']}/layout/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/{$config['folder']}/layout/css/mater.css">
 </head>
 <body class="text-center">
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/{$config['folder']}">
                     <img alt="PlanoEnsino" src="...">
                 </a>
             </div>
