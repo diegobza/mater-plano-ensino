@@ -1,7 +1,7 @@
 <?php
 
 define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
+define('DB_USER', 'zaphod');
 define('DB_PASS', 'beeblebrox');
 define('DB_NAME', 'materpe');
 

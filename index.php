@@ -11,11 +11,13 @@ if (isset($_POST['logout'])) {
 }
 
 if (!empty($_POST['usuario']) && !empty($_POST['senha'])) {
-    $PE_USER = htmlspecialchars($_POST['usuario']);
-    $PE_PASS = htmlspecialchars($_POST['senha']);
+    $PE_USER = $_POST['usuario'];
+    $PE_PASS = $_POST['senha'];
+    echo password_hash($PE_PASS, PASSWORD_DEFAULT);
     if (con_login($PE_USER, $PE_PASS)) {
         $_SESSION['login'] = $PE_USER;
     } else {
+        echo 'ERRO';
     }
 }
 
